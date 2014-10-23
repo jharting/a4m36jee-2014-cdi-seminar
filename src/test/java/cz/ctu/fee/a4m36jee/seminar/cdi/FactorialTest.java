@@ -16,6 +16,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import cz.ctu.fee.a4m36jee.seminar.cdi.factorial.Factorial;
+import cz.ctu.fee.a4m36jee.seminar.cdi.factorial.Parallel;
 import cz.ctu.fee.a4m36jee.seminar.cdi.factorial.util.FactorialComputationFinished;
 
 import static org.junit.Assert.assertEquals;
@@ -24,6 +25,7 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(Arquillian.class)
 public class FactorialTest {
 
+    @Parallel
     @Inject
     private Factorial factorial;
 
