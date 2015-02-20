@@ -5,7 +5,6 @@ import java.math.BigInteger;
 import javax.annotation.Priority;
 import javax.decorator.Decorator;
 import javax.decorator.Delegate;
-import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Any;
 import javax.inject.Inject;
 import javax.interceptor.Interceptor;
@@ -17,7 +16,6 @@ import javax.interceptor.Interceptor;
  * @author Jozef Hartinger
  */
 @Decorator
-@Dependent
 @Priority(Interceptor.Priority.APPLICATION)
 public class CacheAwareFactorialDecorator implements Factorial {
 
